@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Juan Romani - Desarrollador Frontend.">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-...." crossorigin="anonymous">
+
+    <title>Juan Romani - Desarrollador Frontend</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="hacker.png" alt="Juan Romani Foto">
+        </div>
+        <nav>
+            <ul>
+                <li><a class="menu-link" href="#inicio">Inicio</a></li>
+                <li><a class="menu-link" href="#sobre-mi">Sobre mí</a></li>
+                <li><a class="menu-link" href="#habilidades">Habilidades</a></li>
+                <li><a class="menu-link" href="#proyects">Proyectos</a></li>
+                <li><a class="menu-link" href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburguesa">
+            <div class="barra"></div>
+            <div class="barra"></div>
+            <div class="barra"></div>
+        </div>
+
+    </header>
+
+    <!-- Hero -->
+
+    <section id="inicio" class="seccion">
+        <section id="hero" class="hero">
+            <video autoplay loop muted>
+                <source src="video (2160p) (1).mp4" type="video/mp4">
+            </video>
+
+            <div class="contenido-hero">
+                <h1>Bienvenido a MI PORTFOLIO</h1>
+                <p>Juan Romani - Desarrollador Frontend.</p>
+            </div>
+            <img src="rocket.png" class="movimiento" width="300px" height="300px"></img>
+        </section>
+    </section>
+
+    <!-- Sobre Mí -->
+
+    <section id="sobre-mi" class="seccion">
+        <h2>Sobre Mí🚀</h2>
+        <div class="quien-soy">
+            <div class="imagen-juan">
+                <img src="FotoRetratoJuan.jpg" alt="Foto de Juan Romani">
+            </div>
+            <div class="texto-juan">
+                <h3>Juan Romani</h3>
+                <p>Hola, soy Juan Romani, fundador de Web Supra. En enero de 2024, decidí establecer esta empresa junto
+                    a un grupo de apasionados profesionales en programación, marketing digital y edición de contenido
+                    audiovisual.</p>
+                <p>Nuestra historia se nutre de mi experiencia como desarrollador frontend. Comencé mi viaje en el mundo
+                    del desarrollo web en enero de 2023, explorando de manera autodidacta y maravillándome al crear
+                    soluciones digitales desde cero.</p>
+                <p>Posteriormente, perfeccioné mis habilidades en el Instituto ICTD Calamuchita.</p>
+                <P>Hoy, en Web Supra, nos dedicamos a ofrecer servicios de diseño web, desarrollo frontend y creación de
+                    contenido informativo, desafiando límites y aprendiendo continuamente en este dinámico campo.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- Habilidades -->
+
+    <section id="habilidades" class="seccion">
+        <div class="habilidades">
+            <h2>Mis Habilidades🧠</h2>
+
+            <div class="habilidad">
+                <h3>Desarrollo Frontend</h3>
+
+                <div id="contenido-adicional-desarrollo" class="contenido-adicional-desarrollo">
+
+                    <p>✓ Implementación de interfaces de usuario interactivas y amigables.</p>
+                    <p>✓ Enfoque principal en el desarrollo frontend utilizando tecnologías modernas para asegurar una
+                        experiencia de usuario fluida y agradable:</p>
+                    <div class="iconos">
+                        <div class="icono">
+                            <i class="fab fa-html5" style="color: #E44D26;"></i>
+                            <p>HTML5</p>
+                        </div>
+                        <div class="icono">
+                            <i class="fab fa-css3" style="color: #2965F1;"></i>
+                            <p>CSS3</p>
+                        </div>
+                        <div class="icono">
+                            <i class="fab fa-js" style="color: #F0DB4F;"></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="icono">
+                            <i class="fab fa-vuejs" style="color: #42b883;"></i>
+                            <p>Vue.js</p>
+                        </div>
+
+                    </div>
+                </div>
+                <button id="ver-mas-btn-desarrollo" class="ver-mas-btn" onclick="toggleContentDesarrollo()">
+                    <span class="ver-mas-label">&#9660;</span>
+                </button>
+            </div>
+
+            <div class="habilidad">
+                <h3>Diseño Web</h3>
+
+                <div id="contenido-adicional-diseño" class="contenido-adicional-diseño">
+                    <p>✓ Creación de sitios web y aplicaciones con las últimas tendencias de diseño para ofrecer una
+                        experiencia única e impactante.</p>
+                    <p>✓ Creación de manuales de marca: logo, tipografías, colores para integrarla al sitio.</p>
+                    <p>✓ Realización de sitios simples y frescos que representen e identifiquen.</p>
+                </div>
+
+                <button id="ver-mas-btn-diseño" class="ver-mas-btn" onclick="toggleContentDiseño()">
+                    <span class="ver-mas-label">&#9660;</span>
+                </button>
+            </div>
+    </section>
+
+    <!-- Proyectos -->
+
+    <div id="proyects" class="proyects">
+        <h2>Mis Proyectos🖥️</h2>
+    </div>
+    <section class="proyectos" id="proyectos">
+        <div class="pags">
+            <h3>Páginas Destacadas</h3>
+            <button onclick="window.location.href='paginas.html'" style="background-color: transparent; border: none;">
+                <img src="web-browser.png" alt="Icono de página web" width="150px" height="200px">
+                <p style="font-size: 16px;">👉Ver Páginas</p>
+            </button>
+
+        </div>
+
+        <div class="apps">
+            <h3>Aplicaciones Destacadas</h3>
+            <button onclick="window.location.href='apps.html'" style="background-color: transparent; border: none;">
+                <img src="booking.png" alt="Icono de página web" width="150px" height="200px">
+                <p style="font-size: 16px;">👉Ver Apps</p>
+            </button>
+
+        </div>
+    </section>
+
+
+
+    <!-- Contacto -->
+
+    <section id="contacto" class="seccion">
+        <h2>Contacto📧</h2>
+
+        <ul>
+            <li><i class="far fa-envelope"></i> <a
+                    href="https://mail.google.com/mail/?view=cm&to=empresawebsupra@gmail.com">empresawebsupra@gmail.com</a>
+            </li>
+            <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/juan-romani/"
+                    target="_blank">Juan-Romani</a></li>
+            <li><i class="fab fa-github"></i><a href="https://github.com/Juan-Romani" target="_blank">Juan-Romani</a>
+            </li>
+            <li><i class="fab fa-whatsapp"></i><a href="https://wa.me/3571346147" target="_blank">Whatsapp</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>2024 Juan Romani. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+    <!-- WhatsApp -->
+
+    <a href="https://api.whatsapp.com/send?phone=3571346147" target="_blank" rel="noopener noreferrer">
+        <img src="whatsapp.png" alt="WhatsApp">
+        <span>Contactame por WhatsApp</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
